@@ -443,36 +443,6 @@ button[type="submit"] {
 }
 
 
-/* Shop page  */
-
-
-/* Section */
-.section {
-  margin-top: 10rem;
-}
-
-/* Flash Sale */
-.section_category_p {
-  border-left: 1.4rem solid var(--colo-primary);
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--colo-primary);
-  font-size: 1.3rem;
-}
-
-.section_header {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 4rem;
-}
-
-.section_title {
-  margin-right: 2rem;
-  font-size: 2.6rem;
-}
-
-
-
 /* Profile Design */
 
 .profile_heading h1{
