@@ -48,7 +48,7 @@ await changeUserPassword(currentpass,newpass,Confirmpass,email);
   return (
   
     <div className="prof_container">
-      <Header/>
+      <Header pageName="profile"/>
       <h1 className="profile_heading">User Profile</h1>
       <div className="profile_nav">
 <h2>Mange my Account</h2>
