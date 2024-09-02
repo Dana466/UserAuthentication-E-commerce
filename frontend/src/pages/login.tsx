@@ -68,7 +68,7 @@ if(!response.ok) {
   return (
    
     <div>
-<Header/>
+<Header pageName="login" />
     <section className="section">
     <div className="auth_container">
       <div className="auth_img">
