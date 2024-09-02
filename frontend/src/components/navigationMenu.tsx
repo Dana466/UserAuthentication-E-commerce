@@ -5,25 +5,11 @@ import heartimage from '../assests/heart.png';
 import cardimage from '../assests/cart.png';
 import { FaUserCircle } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+interface NavProps {
+  pageName: string;
+}
 
-/*const TopNav = () => {
-
-
-  return (
-    <div className="top_nav">
-      <div className="container top_nav_container">
-        <div className="top_nav_wrapper">
-          <p className="tap_nav_p">
-            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-          </p>
-          <a href="#" className="top_nav_link">SHOP NOW</a>
-        </div>
-      </div>
-    </div>
-  );
-};*/
-
-const Nav = () => {
+const Nav: React.FC<NavProps> = ({ pageName })=> {
 
 
   const navigate = useNavigate();
@@ -66,14 +52,20 @@ const Nav = () => {
               type="text"
               className="nav_input"
               placeholder="search here...."
-            />
+            />            
             <img src={searchimage} alt="" className="nav_search" />
           </form>
+
+          {pageName !== 'login' && pageName !== 'register' && (
+            <>
+
           <img src={heartimage} alt="" className="nav_heart" />
           
             <img src={cardimage} alt="" className="nav_cart" />
             <FaUserCircle className='nav_user' onClick={ handleClick } size={35} />
-          
+            
+            </>
+          )}
         </div>
      
       </div>
@@ -105,11 +97,11 @@ const MobileNav = () => {
   );
 };
 
-const Header = () => {
+const Header : React.FC<NavProps> = ({ pageName }) => {
   return (
     <div>
       
-      <Nav />
+      <Nav pageName={pageName} />
       <MobileNav />
     </div>
   );
