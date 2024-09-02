@@ -88,7 +88,7 @@ const signinWithGoogle = async (e: React.FormEvent) => {
 
   return (
 <div>
-  <Header/>
+  <Header pageName="register"/>
     <section className="section">
     <div className="auth_container">
       <div className="auth_img">
